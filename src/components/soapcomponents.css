@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+}
+.conteiner-soap{
+    border: solid;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 15px;
+
+
+}
+
+img{
+    
+    width: 250px;
+    height: 250px;
+}

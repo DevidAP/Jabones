@@ -1,0 +1,12 @@
+.soaps{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+
+}
+
+@media (max-width: 768px) {
+    .soaps {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+}
