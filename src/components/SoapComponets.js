@@ -8,7 +8,13 @@ export default function SoapComponets(props) {
 
   return (
     <div className='conteiner-soap'>
+      <div className="container">
       <img src={imageUrl} alt={props.name} />
+        <div className="capa">
+        <p>{props.description}</p>
+
+        </div>
+      </div>
         <p>{props.name}</p>
         <button>{props.precio}</button>
 

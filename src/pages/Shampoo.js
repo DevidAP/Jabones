@@ -3,6 +3,7 @@ import SoapComponets from '../components/SoapComponets'
 export default function Shampoo() {
   return (
     <div className='soaps'>
+      <div className="container-soap">
       <SoapComponets 
       carpet='shampoo'
       imagen='gel-baño'
@@ -93,7 +94,7 @@ export default function Shampoo() {
       name='shampoo solido'
       precio='500'
       />
-
+</div>
       
       
       

@@ -1,12 +1,12 @@
-.soaps{
-    
-    display: grid;
-    grid-template-columns: repeat(3, 1fr)
-
+.soaps {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-@media (max-width: 768px) {
-    .soaps {
-        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
-    }
+.container-soap {
+  margin-top: 80px;
+  display: flex; /* Cambiado a display: flex */
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* Permitir que los elementos flexibles se envuelvan a la siguiente fila en pantallas más pequeñas */
+  
 }

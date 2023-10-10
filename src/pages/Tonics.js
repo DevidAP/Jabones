@@ -3,6 +3,7 @@ import SoapComponets from '../components/SoapComponets'
 export default function Tonics() {
   return (
     <div className='soaps'>
+      <div className="container-soap">
       <SoapComponets 
       carpet='tonics'
       imagen='tonic-poros'
@@ -35,6 +36,7 @@ export default function Tonics() {
       />
 
 
+      </div>
 
     </div>
   )

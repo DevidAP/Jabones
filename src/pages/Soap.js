@@ -4,6 +4,7 @@ import './soaps.css'
 export default function Soap() {
   return (
     <div className='soaps'>
+      <div className="container-soap">
       <SoapComponets 
       carpet='soap'
       imagen='jabon-tinto'
@@ -122,7 +123,7 @@ export default function Soap() {
       />
 
             
-
+        </div>
     </div>
   )
 }
