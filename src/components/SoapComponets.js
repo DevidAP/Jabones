@@ -11,7 +11,7 @@ export default function SoapComponets(props) {
       <div className="container">
       <img src={imageUrl} alt={props.name} />
         <div className="capa">
-        <p>{props.description}</p>
+        <p className='text-description'>{props.description}</p>
 
         </div>
       </div>
