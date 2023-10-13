@@ -10,3 +10,12 @@
   flex-wrap: wrap; /* Permitir que los elementos flexibles se envuelvan a la siguiente fila en pantallas más pequeñas */
   
 }
+
+
+@media screen and (max-width: 768px) {
+  .container-soap{
+  margin-top: 350px;
+  }
+  
+  
+  }

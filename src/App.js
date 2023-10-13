@@ -11,15 +11,17 @@ import Tonics from './pages/Tonics';
 export default function App() {
   return (
     <BrowserRouter>
+    
+
     <Navbar/>
         <Routes>
             <Route path='/' element={ <Home />  }/>
             <Route path='/soap' element={ <Soap /> }/>
-            <Route path='*' element={<NotFound/>}/>
             <Route path='/shampoo' element={<Shampoo />} />
             <Route path='/oilmacerated' element={<OilMacerated />} />
             <Route path='/tonics' element={<Tonics />} />
 
+            <Route path='*' element={<NotFound/>}/>
         </Routes>
     </BrowserRouter>
 

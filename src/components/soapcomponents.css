@@ -28,11 +28,11 @@ p{
     
 }
 .text-description{
-    margin-top: 25%;
+    display: grid;
     background: rgba(11, 7, 226, 0.6);
     color: aliceblue;
     text-align: center;
-    justify-content: center;
+    place-content: center;
 }
 
 button{
@@ -60,6 +60,7 @@ img{
     opacity: 0;
     visibility: hidden;
     text-align: center;
+    display: flex;
 
 
 }
@@ -74,6 +75,7 @@ img{
   opacity: 0;
   visibility: hidden;
   text-align: center;
+  align-items: center;
   border-top-left-radius: 45x;
   border-top-right-radius: 45px;
 }
@@ -85,5 +87,9 @@ img{
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
   height: 71%;
+  justify-content: center;
+  align-items: center;
  
 }
+
+

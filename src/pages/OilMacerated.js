@@ -10,35 +10,35 @@ export default function OilMacerated() {
       imagen='macerated-hiperico'
       description=""
       name='Macerado de aceite de hiperico'
-      precio='500'
+      precio='$$$'
       />
             <SoapComponets 
       carpet='macerated'
       imagen='macerated-te'
       description=""
       name='Aceite de te verde'
-      precio='500'
+      precio='$$$'
       />
             <SoapComponets 
       carpet='macerated'
       imagen='macerated-jamaica'
       description=""
       name='Aceite de Jamaica'
-      precio='500'
+      precio='$$$'
       />
             <SoapComponets 
       carpet='macerated'
       imagen='macerated-calendula'
       description=""
       name='Extracto glicerinado de calendula '
-      precio='500'
+      precio='$$$'
       />
             <SoapComponets 
       carpet='macerated'
       imagen='macerated-romero'
       description="a"
       name='Aceite de romero'
-      precio='500'
+      precio='$$$'
       />
 
 </div>

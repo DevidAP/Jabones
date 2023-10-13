@@ -1,0 +1,35 @@
+.componentes-cards {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+  }
+  Link to {
+    text-decoration: none;
+  }
+  p{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    
+  }
+  .imagenes-home {
+    max-width: 100%;   
+      height: auto;
+    margin-left: 20px;
+    border-radius: 0;
+  }
+  @media screen and (max-width: 768px) {
+   .componentes-cards{
+        margin-top: 400px;
+    } 
+    p{
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      
+    }
+
+}
