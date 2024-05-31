@@ -79,7 +79,7 @@ img{
   border-top-right-radius: 45px;
 }
 
-/* Estilo cuando el cursor está sobre el contenedor */
+
 .conteiner-soap:hover .capa {
   opacity: 1; /* Muestra la capa */
   visibility: visible;
