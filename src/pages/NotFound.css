@@ -1,0 +1,22 @@
+.error{
+    margin: -100px;
+    padding: 0px;
+    text-align: center;
+    display: flex;  
+    /* align-items: center; */
+    /* justify-content: center;  */
+    background-color: #fff;
+
+}
+.error-2{
+
+    margin: 250px;
+    height: 1000px;
+    width: 1000px;
+    background: #fff;
+    /* padding: 10px; */
+    /* text-transform: uppercase; */
+    font-size: 50px;
+    z-index: 100;
+    
+}

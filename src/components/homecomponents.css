@@ -1,35 +1,70 @@
-.componentes-cards {
-    margin-top: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    
-  }
-  Link to {
-    text-decoration: none;
-  }
-  p{
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    
-  }
-  .imagenes-home {
-    max-width: 100%;   
-      height: auto;
-    margin-left: 20px;
-    border-radius: 0;
-  }
-  @media screen and (max-width: 768px) {
-   .componentes-cards{
-        margin-top: 400px;
-    } 
-    p{
-      text-align: center;
-      text-decoration: none;
-      color: black;
-      
-    }
+body {
+  padding: 10px;
+  margin: 0px;
+  background: radial-gradient(
+    at center top,
+    rgb(180, 83, 9),
+    rgb(253, 186, 116),
+    rgb(159, 18, 57)
+  );
+  text-decoration: none;
+}
 
+.container-home2 {
+  margin-top: 50px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido horizontalmente */
+  text-align: center;
+}
+
+p {
+  text-transform: uppercase;
+}
+
+.componentes-cards {
+  display: grid; /* Usa grid para una disposición de columnas */
+  grid-template-columns: repeat(4, 1fr); /* Define 4 columnas iguales */
+  gap: 20px; /* Espacio entre las tarjetas */
+  width: 100%;
+  max-width: 1200px; /* Limita el ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 20px;
+  box-sizing: border-box;
+  height: 570px;
+  align-items: center;
+}
+
+.card {
+  height: 400px; /* Ajusta la altura de las tarjetas */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white; /* Fondo blanco para las tarjetas */
+  border-radius: 12px;
+}
+
+.info-home {
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.imagenes-home {
+  width: 100%; /* Asegura que la imagen ocupe el ancho completo del contenedor de la tarjeta */
+  height: 250px;
+  border-radius: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .componentes-cards {
+    grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas en pantallas más pequeñas */
+  }
 }

@@ -1,94 +1,84 @@
-*{
-    margin: 0px;
-    background-color: aliceblue;
+* {
+  padding: 0px;
+  margin: 0px;
 }
-.conteiner-soap{
-    position: relative;
-    border: solid;
-    width: 250px;
-    height: 350px;
-    text-align: center;
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
-    margin-left: 50px;
-    margin-top: 50px;
-    z-index: 1000;
+.conteiner-soap {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  text-align: center;
+  border-radius: 12px;
+  margin-left: 50px;
+  margin-top: 50px;
+  z-index: 1000;
+  box-shadow: 17px 20px 33px -1px rgba(0, 0, 0, 0.68);
+}
+.container img {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+
+  width: 249px;
+  height: 250px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+nav {
   
-
+  text-transform: uppercase;
+  padding: 10px;
+  height: 30px;
+  text-align: center;
+  align-items: center;
 }
-.container{
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
-}
-
-
-p{
-    text-transform: uppercase;
-    margin-top: 10px;
-    
-}
-.text-description{
-    display: grid;
-    background: rgba(11, 7, 226, 0.6);
-    color: aliceblue;
-    text-align: center;
-    place-content: center;
+.text-description {
+  display: grid;
+  background: #eecd90;
+  color: rgb(12, 13, 13);
+  text-align: center;
+  place-content: center;
+  opacity: 1;
 }
 
-button{
-    margin-top: 5px;
-    padding: 10px 15px;
-    justify-items: center;
+button {
+  margin: 0px 10px;
+  padding: 10px 15px;
+  border-radius: 9px;
 }
-img{
 
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
-    width: 249px;
-    height: 250px;
-    z-index: 1;
-    overflow: hidden;
-
-}
-.capa{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(11, 7, 226, 0.6);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-    display: flex;
-
-
+.capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #eecd90;
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  display: flex;
 }
 .conteiner-soap .capa {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(11, 7, 226, 0.6);
+  background: #eecd90;
   transition: all 500ms ease-out;
-  opacity: 0;
   visibility: hidden;
   text-align: center;
   align-items: center;
-  border-top-left-radius: 45x;
-  border-top-right-radius: 45px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
 }
-
 
 .conteiner-soap:hover .capa {
   opacity: 1; /* Muestra la capa */
   visibility: visible;
-  border-top-left-radius: 45px;
-  border-top-right-radius: 45px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
   height: 71%;
   justify-content: center;
   align-items: center;
- 
+  opacity: 0.8;
 }
-
-
