@@ -7,7 +7,7 @@ import Navbar from './components/Navbar';
 import Shampoo from './pages/Shampoo';
 import OilMacerated from './pages/OilMacerated';
 import Tonics from './pages/Tonics';
-import { CartProvider } from './components/Cart/CartContex';
+// import { CartProvider } from './components/Cart/CartContex';
 
 import './App.css';
 
@@ -33,11 +33,9 @@ function AppContent() {
 export default function App() {
   return (
     <Router>
-      <CartProvider>
-        <div className="app-container">
-          <AppContent />
-        </div>
-      </CartProvider>
+      <div className="app-container">
+        <AppContent />
+      </div>
     </Router>
   );
 }

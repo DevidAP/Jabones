@@ -1,9 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 import "../components/soapcomponents.css";
-import { CartContext } from "./Cart/CartContex"; // Importa correctamente CartContext
 
 export default function SoapComponets(product) {
-  const { addItemToCart } = useContext(CartContext);
+  // Eliminar la línea que usa useContext
+  // const { addItemToCart } = useContext(CartContext);
+
   const imageUrl = require(`../image/${product.carpet}/${product.imagen}.png`);
 
   return (
@@ -17,8 +18,7 @@ export default function SoapComponets(product) {
       <div className="boton-price">
         <nav>{product.name}</nav>
         <button onClick={() => console.log("agregando al carrito")}>
-        
-          {/* // addItemToCart(product) */}
+          {/* Si `addItemToCart` ya no se usa, simplemente quita la llamada */}
           {product.price}
         </button>
       </div>
