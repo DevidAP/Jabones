@@ -1,14 +1,20 @@
 body {
   padding: 10px;
-  margin: 0px;
+  margin: 0;
   background: radial-gradient(
     at center top,
     rgb(180, 83, 9),
     rgb(253, 186, 116),
     rgb(159, 18, 57)
   );
+  background-size: cover; /* Asegura que el fondo ocupe toda la pantalla */
+  background-repeat: no-repeat; /* Evita que el fondo se repita */
+  background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+  background-position: center top; /* Centra el fondo en la parte superior */
+  min-height: 100vh; /* Asegura que el body tenga al menos la altura de la pantalla */
   text-decoration: none;
 }
+
 
 .container-home2 {
   margin-top: 50px;

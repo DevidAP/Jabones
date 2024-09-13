@@ -1,94 +1,89 @@
 /* Estilo general del Navbar */
 .navigator {
   height: 90px;
+  margin-top: -10px;
+  margin-left: -10px;
   position: fixed;
   z-index: 100000;
   display: flex;
   width: 100%;
-  padding: 0px;
-  margin: -10px;
-  justify-content: center;
-  opacity: 0.7;
-  background: #F5F5DC;
-  transition: transform 0.3s ease; /* Agrega una transición para el deslizamiento */
-}
-
-/* Estilo específico para la página de inicio */
-.navigator.home-page {
-  background: #F5F5DC; /* Cambia el color de fondo para la página de inicio */
-  margin-top: -25px;
-  height: 90px;
-}
-
-/* Estilos comunes para el menú */
-ul {
-  display: flex;
-  padding: 15px;
-  justify-content: center;
-  opacity: 1;
-  list-style: none;
-  margin: 0;
   padding: 0;
+  justify-content: center;
+  opacity: 0.9;
+  background:  #F5F5DC; /* Color de fondo actualizado */
+  transition: background-color 0.7s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-li {
-  color: aliceblue;
-  margin-left: 50px;
-  padding: 20px;
-}
 
-.container-list {
-  color: black;
-  text-decoration: none;
-  font-size: 27px;
-  text-transform: uppercase;
-}
-
-/* Estilo para el elemento seleccionado */
-.selected {
-  background-color: salmon;
-}
 
 /* Botón para mostrar el menú en dispositivos móviles */
 .nav-toggle {
-  display: none; /* Oculta el botón por defecto */
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  background: #F5F5DC;
-  border: none;
-  padding: 10px;
-  font-size: 20px;
+  display: none;
+  position: absolute;
+  left: 20px; /* Alinea el toggle a la izquierda */
+  top: 20px;
   cursor: pointer;
+  color: black; /* Cambia el color del ícono de toggle a negro */
+  font-size: 24px;
+}
+
+/* Estilo común para el menú */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+li {
+  margin: 0 15px;
+}
+
+li a {
+  text-decoration: none;
+  color: black; /* Cambia el color del texto de los enlaces a negro */
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 /* Responsivo */
 @media screen and (max-width: 768px) {
-  .navigator {
-    transform: translateY(-100%); /* Oculta el Navbar moviéndolo fuera de la pantalla */
+  .navigator{
+    margin-top: -10px;
+    margin-left: -10px;
   }
-  
-  .navigator.show {
-    transform: translateY(0); /* Muestra el Navbar moviéndolo a su posición original */
-  }
-  
   ul {
+    display: none;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    display: none; /* Oculta la lista de navegación por defecto */
+    position: absolute;
+    top: 0px; /* Empieza justo debajo del navbar */
+    left: 0;
+    width: 100%;
+    background-color: #F5F5DC; /* Color de fondo actualizado */
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
   }
-  
+
   ul.show {
-    display: flex; /* Muestra la lista cuando el Navbar está visible */
+    display: flex;
+    max-height: 500px; /* Ajusta según el número de elementos del menú */
+  }
+
+  ul.hide {
+    max-height: 0;
   }
 
   li {
-    margin-left: 0;
+    padding: 10px 0;
+    text-align: center;
   }
-  
+
   .nav-toggle {
-    display: block; /* Muestra el botón en pantallas pequeñas */
+    display: block;
   }
 }
-

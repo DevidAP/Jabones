@@ -10,36 +10,30 @@ export default function Navbar({ isHomePage }) {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
-    <div className={`navigator ${isHomePage ? 'home-page' : ''} ${isMenuOpen ? 'show' : ''}`}>
+    <div className={`navigator ${isHomePage ? 'home-page' : ''}`}>
       <button className="nav-toggle" onClick={toggleMenu}>
         ☰
       </button>
-      <ul className={isMenuOpen ? 'show' : ''}>
-        <li className={location.pathname === "/" ? "selected" : ""}>
-          <Link to="/" className="container-list">
-            Home
-          </Link>
+      <ul className={isMenuOpen ? 'show' : 'hide'}>
+        <li className={location.pathname === "/" ? "selected" : ""} onClick={closeMenu}>
+          <Link to="/" className="container-list">Home</Link>
         </li>
-        <li className={location.pathname === "/soap" ? "selected" : ""}>
-          <Link to="/soap" className="container-list">
-            Soap
-          </Link>
+        <li className={location.pathname === "/soap" ? "selected" : ""} onClick={closeMenu}>
+          <Link to="/soap" className="container-list">Soap</Link>
         </li>
-        <li className={location.pathname === "/shampoo" ? "selected" : ""}>
-          <Link to="/shampoo" className="container-list">
-            Shampoo
-          </Link>
+        <li className={location.pathname === "/shampoo" ? "selected" : ""} onClick={closeMenu}>
+          <Link to="/shampoo" className="container-list">Shampoo</Link>
         </li>
-        <li className={location.pathname === "/oilmacerated" ? "selected" : ""}>
-          <Link to="/oilmacerated" className="container-list">
-            Oil Macerated
-          </Link>
+        <li className={location.pathname === "/oilmacerated" ? "selected" : ""} onClick={closeMenu}>
+          <Link to="/oilmacerated" className="container-list">Oil Macerated</Link>
         </li>
-        <li className={location.pathname === "/tonics" ? "selected" : ""}>
-          <Link to="/tonics" className="container-list">
-            Tonics
-          </Link>
+        <li className={location.pathname === "/tonics" ? "selected" : ""} onClick={closeMenu}>
+          <Link to="/tonics" className="container-list">Tonics</Link>
         </li>
       </ul>
     </div>
